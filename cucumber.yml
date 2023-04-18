@@ -4,6 +4,7 @@ pretty: --format pretty
 development: ENVIRONMENT=development
 production: ENVIRONMENT=production
 qa: ENVIRONMENT=qa
+
 ci: -p pretty --publish-quiet -p html -p production -p chrome_headless
 
 chrome: BROWSER=chrome
