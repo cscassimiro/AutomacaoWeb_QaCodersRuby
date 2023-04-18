@@ -1,18 +1,15 @@
 ## Projeto de Automação Web em Ruby
 ---
 
+#### Esse projeto tem por finalidade validar os menus da Home page do site **[Qa.Coders](https://qacoders.com.br/)**
+
 <br>
 
-### Automação FrontEnd, utilizando o site **[Qa.Coders](https://qacoders.com.br/)**
+### **Baixar o projeto do repositório:**
+    git clone https://github.com/cscassimiro/AutomacaoWeb_SiteQaCoders.git
 
-
-### Baixar o projeto do repositório:
-    git clone https://github.com/cscassimiro/automacao_web_qacoders
-
-### Instalar as dependências do projeto utilizando o comando:
+### Para instalar as dependências do projeto utilizar o comando:
     bundle install
 
-### Executar projeto utilizando o comando:
-    bundle exec cucumber
-
-    
+### Para executar projeto utilizar o comando:
+    bundle exec cucumber  
