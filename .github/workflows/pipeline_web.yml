@@ -37,4 +37,5 @@ jobs:
       uses: actions/upload-artifact@v3
       with: 
           name: reports
-          path: reports/relatorio_ci.html
+          path: ./reports/reports.html
+          
