@@ -34,5 +34,5 @@ jobs:
     - name: Step 4 Archive production artifacts # permite que fazer o download do arquivo relatorio.
       uses: actions/upload-artifact@v3
       with: 
-        name: report
+        name: reports
         path: ./reports/report.html 
