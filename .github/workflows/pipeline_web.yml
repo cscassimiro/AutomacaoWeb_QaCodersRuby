@@ -15,24 +15,30 @@ permissions:
 jobs:
   test:
 
+    # Executa na ultima versão do ubuntu
     runs-on: ubuntu-latest
 
+    # Steps são os passo a passo para executar o projeto
     steps: 
-    - name: Step 1 Checkout code  # Baixa os arquivos do repositório
+    # Clona o projeto para executar no action
+    - name: Step 1 Checkout Project  
       uses: actions/checkout@v3
 
-    - name: Step 2 Set up Ruby # Faz a instalação do Ruby e dependências
+    # Configuração do Ruby e das dependências
+    - name: Step 2 Setup Ruby 
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.1.2'
         bundler-cache: true # executa 'bundle install' e armazena em cache as gems instaladas
 
-    - name: Step 3 Execute test # Executa os Testes em modo headless
+    # Excecução sos testes no navegador web sem interface chrome_headless
+    - name: Step 3 Execute test 
       run:
           bundle exec cucumber -p ci          
-          
-    - name: Step 4 Archive production artifacts # permite que fazer o download do arquivo relatorio.
+
+    # Grava o relatório do resultado do teste
+    - name: Step 4 Archive production artifacts 
       uses: actions/upload-artifact@v3
       with: 
         name: reports
-        path: ./reports/report.html 
+        path: ./reports/report.html

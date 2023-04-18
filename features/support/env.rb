@@ -12,8 +12,8 @@ CONFIG = YAML.load_file(File.dirname(__FILE__) + "/environments/#{ENVIRONMENT}.y
 World(Pages, Helper)
 
 Capybara.configure do |config|
-    case ENV['BROWSER']
-        when 'chrome_headless'
+    case ENV['BROWSER'] #configuração para validar o navegador de execução do teste
+        when 'chrome_headless' 
             config.default_driver = :selenium_chrome_headless
         when 'chrome'  
             config.default_driver = :selenium_chrome
