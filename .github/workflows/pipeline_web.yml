@@ -26,7 +26,7 @@ jobs:
       with:
         ruby-version: '3.1.2'
         bundler-cache: true # executa 'bundle install' e armazena em cache as gems instaladas
-      
+
     - name: Step 3 Execute test # Executa os Testes em modo headless
       run:
           bundle exec cucumber -p ci          
