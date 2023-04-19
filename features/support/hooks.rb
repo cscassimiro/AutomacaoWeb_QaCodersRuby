@@ -1,7 +1,6 @@
 Before do |scenario|
     Capybara.page.driver.browser.manage.window.maximize
     Capybara.current_session.driver.browser.manage.delete_all_cookies
-    #page.driver.quit
 end
 
 After do |scenario|

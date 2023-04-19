@@ -1,11 +1,9 @@
 class Home < SitePrism::Page
-     
+
     element :btn_sobre_nos, 'a[href="/#sobre-nos"' 
     element :btn_depoimento, 'a[href="/#depoimentos"' 
     element :btn_parceiros, 'a[href="/#parceiros"' 
     element :btn_fale_conosco, 'a[href="/#faleConosco"'
-
- 
 
     def click_button(menu)
         if menu == "Sobre nós"
@@ -44,6 +42,3 @@ class Home < SitePrism::Page
         end    
     end
 end
-
-
-
