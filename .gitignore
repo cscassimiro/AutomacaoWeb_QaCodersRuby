@@ -1,3 +1,4 @@
 *.log
 reports/screenshots
 Gemfile.lock
+*.gitignore
