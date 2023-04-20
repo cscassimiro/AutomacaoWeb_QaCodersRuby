@@ -31,7 +31,7 @@ jobs:
         ruby-version: '3.1.2'
         bundler-cache: true # executa 'bundle install' e armazena em cache as gems instaladas
 
-    # Excecução sos testes no navegador web sem interface chrome_headless
+    # Excecução dos testes no navegador web sem interface chrome_headless
     - name: Step 3 Execute test 
       run:
           bundle exec cucumber -p ci          
@@ -41,4 +41,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with: 
         name: reports
-        path: ./reports/report.html
+        path: ./reports/report_ci.html
