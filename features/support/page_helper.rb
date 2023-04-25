@@ -4,4 +4,8 @@ module Pages
     def home
         @home ||= Home.new
     end
+
+    def redesocial
+        @redesocial ||= RedeSocial.new
+    end
 end

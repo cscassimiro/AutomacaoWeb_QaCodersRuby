@@ -1,6 +1,6 @@
 #language: pt
 
-
+@regressivo
 Funcionalidade: Home Page
     Eu Como usuário do site QaCoders
     Gostaria de clicar nos menus da home page
