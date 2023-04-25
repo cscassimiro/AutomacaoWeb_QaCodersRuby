@@ -40,5 +40,5 @@ jobs:
     - name: Step 4 Archive production artifacts 
       uses: actions/upload-artifact@v3
       with: 
-        name: reports
-        path: ./reports/report_ci.html
+        name: reports_ci
+        path: ./reports/reports_ci.html

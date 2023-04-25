@@ -1,5 +1,8 @@
 ## Projeto de Automação Web em Ruby
 ---
+*Estudos de apreendizagem em automação web*
+
+<br>
 
 #### Esse projeto tem por finalidade validar os menus da Home page do site **[Qa.Coders](https://qacoders.com.br/)**
 
