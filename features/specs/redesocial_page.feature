@@ -10,7 +10,7 @@ Funcionalidade: Rede Social
 Esquema do Cenario: Link de midias sociais 
     Dado que eu esteja na pagina home
     Quando eu clico no botão "<rede_social>"  
-    Então sou direcionado para o site "site"
+    Então sou direcionado para o site "<site>"
 
 Exemplos: 
     | rede_social | site                                                |

@@ -22,8 +22,7 @@ class RedeSocial < SitePrism::Page
         end
     end
 
-    def validate_test(site)
-        sleep 2
+    def validate_test(site)        
         site == 'LinkedInd'
         if     
             page.has_link?('https://www.linkedin.com/company/qa-coders/')
@@ -31,21 +30,19 @@ class RedeSocial < SitePrism::Page
         end
     end
 
-    def validate_test(site)
-        sleep 2
+    def validate_test(site)        
         site == 'Facebook'
         if     
-            page.has_link?('https://www.facebook.com/Projeto.Qa.Coders/?_rdr')
-            expect(page.has_link?('https://www.facebook.com/Projeto.Qa.Coders/?_rdr')).to eq true        
+            page.has_link?('https://www.facebook.com/Projeto.Qa.Coders/')
+            expect(page.has_link?('https://www.facebook.com/Projeto.Qa.Coders/')).to eq true        
         end
     end
 
     def validate_test(site)
-        sleep 2
         site == 'Instragram'
         if     
-            page.has_link?('https://www.instagram.com/qa.coders/?hl=en')
-            expect(page.has_link?('https://www.instagram.com/qa.coders/?hl=en')).to eq true        
+            page.has_link?('https://www.instagram.com/qa.coders/')
+            expect(page.has_link?('https://www.instagram.com/qa.coders/')).to eq true        
         end
     end
         

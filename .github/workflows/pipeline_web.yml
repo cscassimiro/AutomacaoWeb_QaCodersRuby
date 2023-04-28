@@ -1,12 +1,14 @@
 name: Pipeline_Web
 
 on:
+  #Executa o fluxo de trabalho quando você faz push de um commit ou tag.
   push:
     branches: [ "main" ]
+  #Executa o fluxo de trabalho quando ocorre uma atividade em no pull request no repositório do fluxo de trabalho. 
   pull_request:
     branches: [ "main" ]
 
-  #executar Manualmente na aba Action
+  #Para permitir que um fluxo de trabalho seja disparado manualmente
   workflow_dispatch:
 
 permissions:
@@ -40,5 +42,5 @@ jobs:
     - name: Step 4 Archive production artifacts 
       uses: actions/upload-artifact@v3
       with: 
-        name: reports_ci
-        path: ./reports/reports_ci.html
+        name: reports
+        path: ./reports/report_ci.html
