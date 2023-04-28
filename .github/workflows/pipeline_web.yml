@@ -43,4 +43,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with: 
         name: reports
-        path: ./reports/report_ci.html
+        path: ./reports/report.html
