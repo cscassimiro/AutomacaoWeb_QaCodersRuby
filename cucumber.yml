@@ -2,14 +2,9 @@ default: -p pretty --publish-quiet -p html -p production -p chrome
 ci: -p pretty --publish-quiet -p html -p production -p chrome_headless #executar no ci git action
 
 pretty: --format pretty 
-development: ENVIRONMENT=development
 production: ENVIRONMENT=production
-qa: ENVIRONMENT=qa
-
 
 chrome: BROWSER=chrome
-firefox: BROWSER=firefox
-edge: BROWSER=edge
 chrome_headless: BROWSER=chrome_headless
 headless: BROWSER=headless
 

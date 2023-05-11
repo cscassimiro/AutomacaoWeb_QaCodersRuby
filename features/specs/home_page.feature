@@ -13,8 +13,8 @@ Esquema do Cenario: Validar Menu home page
     Então sou direcionado para a sessão "<sessao>"  #Resultado Esperado
 
 Exemplos: 
-    | menu          | sessao      | 
-    | Sobre nós     | Sobre nós   |
-    | Depoimentos   | Depoimentos |
-    | Parceiros     | Parceiros   |
-    | Fale Conosco  | Fale Conosco|
+    | menu          | sessao         | 
+    | Sobre nós     | Sobre nós      |
+    | Depoimentos   | Deiros         |
+    | Fale Conosco  | Faleepoimentos |
+    | Parceiros     | Parc Conosco   |
