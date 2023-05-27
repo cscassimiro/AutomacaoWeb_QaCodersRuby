@@ -1,6 +1,6 @@
 module Helper
     def print_screen (file_name, result)
-        date = "#{Time.now.strftime("%Y/%B/%D")}"
+        date = "#{Time.now.strftime("%D/%M/%Y")}"
         hour = "#{Time.now.strftime("%H/%M/%S")}"
 
         file_path = "reports/screenshots/test_#{result}"

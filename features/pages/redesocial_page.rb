@@ -11,7 +11,7 @@ class RedeSocial < SitePrism::Page
     end
 
     def click_link_or_button (rede_social)
-        if rede_social == "LinkedIn"
+        if rede_social == "Facebook"
             link_facebook.click()
         end
     end
